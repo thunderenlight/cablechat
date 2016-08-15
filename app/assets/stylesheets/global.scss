@@ -1,0 +1,13 @@
+.navbar-nav .nav-item span {
+	display: block;
+	padding-bottom: 0.425rem;
+	padding-top: 0.425rem;
+}
+
+#messages {
+	max-height: 450px;
+	overflow-y: auto;
+	.avatar {
+		margin: 0.5rem;
+	}
+}
