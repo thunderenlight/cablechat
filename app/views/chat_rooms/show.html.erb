@@ -1,7 +1,7 @@
 <h1> <%= @chat_room.title %></h1>
 
 <div id="messages">
-	<%= render @chat_room.messages %>here 
+	<%= render @chat_room.messages %>  
 </div>
 
 <hr>
@@ -19,5 +19,5 @@
 
 
 <div id="messages" data-chat-room-id="<%= @chat_room.id %>">
-	<%=  @chat_room.messages.count %>
+	<%=  @chat_room.messages.count %> Here is where I need to display saved messages
 </div>
