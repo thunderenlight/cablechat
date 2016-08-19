@@ -6,12 +6,14 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <%= action_cable_meta_tag %>
   </head>
 
   <body>
 
   	<nav class="navbar navbar-dark bg-inverse">
-  		<%= link_to("CableChat", root_path ,class: 'navbar-band') %>
+  		<%= link_to 'CableChat', root_path ,class: 'navbar-brand' %>
 		<% if user_signed_in? %>
   		<ul class="nav navbar-nav pull-xs-right">
   			<li class="nav-item">

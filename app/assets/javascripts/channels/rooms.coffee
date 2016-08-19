@@ -6,7 +6,7 @@ jQuery(document).on 'turbolinks:load', ->
     messages_to_bottom()
 
     App.global_chat = App.cable.subscriptions.create {
-         channel: "ChatRoomsChannel"
+        channel: "ChatRoomsChannel"
         chat_room_id: messages.data('chat-room-id')
       },
       connected: ->
@@ -30,4 +30,4 @@ jQuery(document).on 'turbolinks:load', ->
         App.global_chat.send_message textarea.val(), messages.data('chat-room-id')
         textarea.val('')
       e.preventDefault()
-return false
+      return false
